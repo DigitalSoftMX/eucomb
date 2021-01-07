@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:scrollbars = "vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars = "vertical"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                style="@style/listStyleNoPadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:focusable="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

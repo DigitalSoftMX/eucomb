@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/user_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="11.- ¿Por qué la ultima captura de mi rendimiento no aparece en mi historial?"
+                tools:text="11.- ¿Por qué la ultima captura de mi rendimiento no aparece en mi historial?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:text="R= Para ver la ultima captura de tu rendimiento es necesario regresar al menú y seleccionar nuevamente  captura de rendimiento."
+                tools:text="R= Para ver la ultima captura de tu rendimiento es necesario regresar al menú y seleccionar nuevamente  captura de rendimiento."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="12.- ¿Cuántos puntos necesito para realizar un canje?"
+                tools:text="12.- ¿Cuántos puntos necesito para realizar un canje?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:text="R= 500."
+                tools:text="R= 500."
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="13.- ¿Qué puedo hacer si olvide mi membresía?"
+                tools:text="13.- ¿Qué puedo hacer si olvide mi membresía?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:text="R= Comunícate con nosotros a lealtad@eucomb.mx."
+                tools:text="R= Comunícate con nosotros a lealtad@eucomb.mx."
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="14.- ¿Por qué no he recibido el correo de recuperación de contraseña?"
+                tools:text="14.- ¿Por qué no he recibido el correo de recuperación de contraseña?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:text="R= Puede que el correo que ingresaste no sea con el mismo con el cuál realizaste tu registro."
+                tools:text="R= Puede que el correo que ingresaste no sea con el mismo con el cuál realizaste tu registro."
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="15.- ¿Por qué no puedo cerrar sesión?"
+                tools:text="15.- ¿Por qué no puedo cerrar sesión?"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="16sp"
+                android:text="R= Puede que tu sesión se encuentre cerrada en el servidor, comunícate con nosotros a lealtad@eucomb.mx."
+                tools:text="R= Puede que tu sesión se encuentre cerrada en el servidor, comunícate con nosotros a lealtad@eucomb.mx."
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

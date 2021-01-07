@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oest.usereucomb.test">
+
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="29" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="com.android.test.runner.MultiDexTestRunner"
+                     android:targetPackage="com.oest.usereucomb"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.oest.usereucomb"/>
+</manifest>

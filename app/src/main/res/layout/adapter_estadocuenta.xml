@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/spacing_xs"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/spacing_xs"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/black"
+            >
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="230dp"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:text="Fecha"
+                android:textStyle="bold"
+                tools:text="Fecha"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/puntos"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/black"
+            android:text="Puntos"
+            tools:text="Puntos" />
+
+        <TextView
+            android:id="@+id/puntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/folio"
+            android:layout_marginLeft="25dp"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:text="0"
+            tools:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/folio"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Estación "
+            tools:text="Estación" />
+
+        <TextView
+            android:id="@+id/estacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/folio"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Estacion"
+            android:textStyle="bold"
+            tools:text="Estacion" />
+
+        <TextView
+            android:id="@+id/concepto"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/folio"
+            android:lines="2"
+            android:textSize="16dp"
+            android:textColor="@color/link_color"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:text="Concepto"
+            tools:text="Concepto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivProfilePhoto"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/white"
+            android:text="Folio: "
+            android:textStyle="bold"
+            tools:text="Folio" />
+
+        <TextView
+            android:id="@+id/folio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/white"
+            android:text="Folio"
+            tools:text="Folio" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

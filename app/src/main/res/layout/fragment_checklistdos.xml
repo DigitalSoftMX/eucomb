@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:gravity="center_horizontal"
+android:orientation="vertical">
+
+<ProgressBar
+    android:id="@+id/login_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone" />
+
+<ScrollView
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/user_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="6.- ¿Por qué no puedo cerrar sesión?"
+            tools:text="6.- ¿Por qué no puedo cerrar sesión?"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="R= Puede que tu sesión este cerrada en el servidor, ponte en contacto con nosotros a través de redes sociales."
+            tools:text="R= Puede que tu sesión este cerrada en el servidor, ponte en contacto con nosotros a través de redes sociales."
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="7.- ¿Por qué no puedo ingresar a mi membresía?"
+            tools:text="7.- ¿Por qué no puedo ingresar a mi membresía?"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="R= Puede que tu cuenta este siendo utilizada en otro dispositivo."
+            tools:text="R= Puede que tu cuenta este siendo utilizada en otro dispositivo."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="8.- ¿Por qué no puedo escanear mi ticket?"
+            tools:text="8.- ¿Por qué no puedo escanear mi ticket?"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="R= Recuerda; por políticas de la empresa solo tienes 24 horas para escanear tu ticket, también es importante verificar que estés conectado a una red wifi o que tengas activados tus datos móviles."
+            tools:text="R= Recuerda; por políticas de la empresa solo tienes 24 horas para escanear tu ticket, también es importante verificar que estés conectado a una red wifi o que tengas activados tus datos móviles."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="9.- ¿Por qué no puedo sumar más puntos?"
+            tools:text="9.- ¿Por qué no puedo sumar más puntos?"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="R= El máximo acumulable por día es de 80 puntos, dividido hasta en 4 cargas."
+            tools:text="R= El máximo acumulable por día es de 80 puntos, dividido hasta en 4 cargas."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="10.- ¿Por qué no puedo ver la ubicación de las estaciones?"
+            tools:text="10.- ¿Por qué no puedo ver la ubicación de las estaciones?"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="R= Puede ser que la información de tu ubicación no este activada."
+            tools:text="R= Puede ser que la información de tu ubicación no este activada."
+            />
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

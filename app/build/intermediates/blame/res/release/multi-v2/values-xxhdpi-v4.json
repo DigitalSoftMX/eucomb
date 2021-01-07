@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ivan\\AndroidStudioProjects\\UserEucombV4\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ivan\\.gradle\\caches\\transforms-2\\files-2.1\\c8eed288a4f8a47b23501296f3b53ee6\\jetified-core-1.9.8\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,55",
+                        "endOffsets": "109,165"
+                    }
+                }
+            ]
+        }
+    ]
+}

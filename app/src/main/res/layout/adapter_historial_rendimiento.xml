@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/spacing_xs"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/spacing_xs"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:id="@+id/element"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/black"
+            >
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="170dp"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:text="Fecha"
+                android:textStyle="bold"
+                tools:text="Fecha"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="80dp"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/black"
+            android:text="Kilometraje"
+            tools:text="Kilometraje" />
+
+        <TextView
+            android:id="@+id/kl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/folio"
+            android:layout_marginLeft="25dp"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="0"
+            tools:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Carga "
+            tools:text="Carga" />
+
+        <TextView
+            android:id="@+id/carga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/folio"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="10"
+            android:textStyle="bold"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/kilometros"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="195dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/folio"
+            android:lines="1"
+            android:textSize="20dp"
+            android:textColor="@color/link_color"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:text="30"
+            tools:text="30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:gravity="left|center_vertical"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Km x Litro"
+        tools:text="Km x Litro" />
+
+</androidx.cardview.widget.CardView>
+

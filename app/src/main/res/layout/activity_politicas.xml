@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:gravity="center_horizontal"
+android:orientation="vertical">
+
+<ProgressBar
+    android:id="@+id/login_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone" />
+
+<ScrollView
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/user_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/concepto"
+            android:textColor="@color/myPrimaryColor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="POLÍTICAS"
+            tools:text="POLÍTICAS"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="1 punto = 1 Litro."
+            android:drawableLeft="@drawable/ic_done"
+            tools:text="1 punto = 1 Litro."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="Maximo acumulable por dia: 80 Puntos."
+            android:drawableLeft="@drawable/ic_done"
+            tools:text="Maximo acumulable por dia: 80 Puntos."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="Dividido hasta en 4 cargas."
+            tools:text="Dividido hasta en 4 cargas."
+            android:drawableLeft="@drawable/ic_done"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="El vale se entrega donde se solicito."
+            tools:text="El vale se entrega donde se solicito."
+            android:drawableLeft="@drawable/ic_done"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="Aplica solo clientes de contado."
+            tools:text="Aplica solo clientes de contado."
+            android:drawableLeft="@drawable/ic_done"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="Tienes 24 hrs para escanear tu código QR."
+            tools:text="Tienes 24 hrs para escanear tu código QR."
+            android:drawableLeft="@drawable/ic_done"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="Solo el propietario de la membresía puede recoger el vale."
+            tools:text="Solo el propietario de la membresía puede recoger el vale."
+            android:drawableLeft="@drawable/ic_done"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:text="1 Canje de vale por dia."
+            tools:text="1 Canje de vale por dia."
+            android:drawableLeft="@drawable/ic_done"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

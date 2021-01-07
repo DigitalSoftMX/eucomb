@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "413148909764",
+    "firebase_url": "https://comoestusereucomb.firebaseio.com",
+    "project_id": "comoestusereucomb",
+    "storage_bucket": "comoestusereucomb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413148909764:android:59807215fecee25b",
+        "android_client_info": {
+          "package_name": "com.oest.usereucomb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413148909764-cqfs8o9h4ps2i39s3euqjik6pvr51luj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzYa4iDu9IQZ5CdC6V4Fq9m8AJymSTdUg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

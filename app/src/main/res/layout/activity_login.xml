@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/user_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="36dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginBottom="50dp">
+
+            <ImageView android:src="@drawable/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Correo Electrónico"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/rounded_placeholder_border_text"
+                    />
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_placeholder_border_text"
+                    android:singleLine="true" />
+
+            <Button
+                android:id="@+id/olvidocontra"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/myPrimaryColor"
+                android:text="OLVIDE MI CONTRASEÑA :(" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_sign_in_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:layout_marginBottom="14dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_placeholder_green"
+                android:text="@string/action_sign_in_short"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/concepto"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="@color/myPrimaryColor"
+                android:text="¿NO TIENES CUENTA?"
+                tools:text="¿NO TIENES CUENTA?"
+                android:layout_gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_register_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textColor="@color/myPrimaryColor"
+                android:background="@drawable/rounded_placeholder_border"
+                android:text="REGÍSTRATE"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:color="@color/myPrimaryColor"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

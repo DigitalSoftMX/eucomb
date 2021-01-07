@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:scrollbars = "vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars = "vertical"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        >
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="20dp"
+            android:textColor="#e6363b"
+            android:textAlignment="center"
+            android:background="#fff"
+            android:text="Titulo: "
+            tools:text="Titulo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:background="#fff"
+            android:textStyle="bold"
+            android:text="El premio se recoge en la estación solicitada"
+            tools:text="El premio se recoge en la estación solicitada" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="2"
+            android:gravity="left|center_vertical"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:background="#fff"
+            android:textStyle="bold"
+            android:text="En caso de no contar con puntos suficientes el sistema no te permitirá realizar el canje"
+            tools:text="En caso de no contar con puntos suficientes el sistema no te permitirá realizar el canje" />
+
+        <RelativeLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                style="@style/listStyleNoPadding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:focusable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

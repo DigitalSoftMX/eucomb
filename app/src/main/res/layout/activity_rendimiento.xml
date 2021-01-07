@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:scrollbars = "vertical"
+    android:orientation="vertical">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars = "vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/user_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:orientation="vertical"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            >
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:gravity="left|center_vertical"
+                android:textSize="20dp"
+                android:textColor="#e6363b"
+                android:textAlignment="center"
+                android:text="Titulo: "
+                tools:text="Titulo" />
+
+                <EditText
+                    android:id="@+id/kl"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:hint="Ingresa el Kilometraje"
+                    android:maxLines="1"
+                    android:background="@drawable/rounded_placeholder_border_text"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/carga"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/rounded_placeholder_border_text"
+                    android:hint="Ingresa la Carga en Litros"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/user_sign_in_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_placeholder_green"
+                android:text="Aceptar"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+
+                />
+
+            <Button
+                android:id="@+id/register"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:color="@color/myPrimaryColor"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

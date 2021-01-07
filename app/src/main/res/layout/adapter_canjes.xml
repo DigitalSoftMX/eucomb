@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/spacing_xs"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/spacing_xs"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/element"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="Número: "
+            android:textStyle="bold"
+            tools:text="Número:" />
+
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="Número"
+            tools:text="Número" />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:text="Fecha"
+            android:textStyle="bold"
+            tools:text="Fecha"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_placeholder_border_text"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/black"
+            android:text="Lugar: "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            tools:text="Estacion " />
+
+        <TextView
+            android:id="@+id/lugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Estacion"
+            tools:text="Estacion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lugar"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="0dp"
+            android:text="Estatus: "
+            tools:text="Estatus: " />
+
+        <TextView
+            android:id="@+id/estatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lugar"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="0dp"
+            android:textStyle="bold"
+            android:text="Estatus"
+            tools:text="Estatus" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

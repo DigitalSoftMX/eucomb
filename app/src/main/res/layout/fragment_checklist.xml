@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+      <ProgressBar
+          android:id="@+id/login_progress"
+          style="?android:attr/progressBarStyleLarge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:visibility="gone" />
+
+      <ScrollView
+          android:id="@+id/login_form"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/user_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:text="1.- No puedo ingresar a mi membresía"
+                      tools:text="1.- No puedo ingresar a mi membresía"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:text="R= Verifica que tu cuenta no esta siendo utilizada en otro dispositivo."
+                      tools:text="R= Verifica que tu cuenta no est siendo utilizada en otro dispositivo."
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:text="2.- No puedo escanear mi ticket"
+                      tools:text="2.- No puedo escanear mi ticket"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:text="R= Verifica que estés conectado a una red Wifi o que tengas activados tus datos móviles."
+                      tools:text="R= Verifica que estés conectado a una red Wifi o que tengas activados tus datos móviles."
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:text="3.- Olvida anotar mi folio para recoger mi vale ¿Cómo puedo conseguirlo?"
+                      tools:text="3.- Olvida anotar mi folio para recoger mi vale ¿Cómo puedo conseguirlo?"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:text="R= En la sección de vales disponibles encontrarás todos los canjes que has realizado y que aún no has recogido en la estación."
+                      tools:text="R= En la sección de vales disponibles encontrarás todos los canjes que has realizado y que aún no has recogido en la estación."
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:text="4.- ¿Por qué no puedo ver la ubicación de las estaciones?"
+                      tools:text="4.- ¿Por qué no puedo ver la ubicación de las estaciones?"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:text="R= Puede ser que la información de tu ubicación no este activada."
+                      tools:text="R= Puede ser que la información de tu ubicación no este activada."
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:text="5.- ¿Por qué la última captura de rendimiento no aparece en mi historial?"
+                      tools:text="5.- ¿Por qué la última captura de rendimiento no aparece en mi historial?"
+                      />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="25dp"
+                      android:layout_marginRight="25dp"
+                      android:textSize="16sp"
+                      android:text="R= Para ver la última captura de tu rendimiento es necessario regresar al menú y seleccionar nuevamente captura de rendimiento."
+                      tools:text="R= Para ver la última captura de tu rendimiento es necessario regresar al menú y seleccionar nuevamente captura de rendimiento."
+                      />
+
+
+
+            </LinearLayout>
+
+      </ScrollView>
+</RelativeLayout>

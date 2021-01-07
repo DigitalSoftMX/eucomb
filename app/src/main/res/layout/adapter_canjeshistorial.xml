@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/spacing_xs"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/spacing_xs"
+    app:cardCornerRadius="6dp"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/element"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="160dp"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:text="Fecha"
+            android:textStyle="bold"
+            tools:text="Fecha"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivProfilePhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_placeholder_border_text"
+            android:src="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/black"
+            android:text="Tipo: "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            tools:text="Tipo " />
+
+        <TextView
+            android:id="@+id/tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Tipo"
+            tools:text="Tipo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tipo"
+            android:textSize="@dimen/textsize_s"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="Puntos: "
+            tools:text="Puntos: " />
+
+        <TextView
+            android:id="@+id/puntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tipo"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Puntos"
+            tools:text="Puntos" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
